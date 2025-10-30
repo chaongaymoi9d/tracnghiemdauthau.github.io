@@ -117,6 +117,69 @@ button{font:inherit}
     transform: translateY(-1px);
 }
 
+/* ====== FIX GIAO DIỆN CHẾ ĐỘ THI – NỀN SÁNG, CHỮ ĐẬM ====== */
+#examRoot,
+#examWrap,
+.exam-card,
+.exam-head,
+#examQuestion,
+#examOptions,
+.review-card {
+    background: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Câu hỏi thi */
+#examQuestion b {
+    color: #111827 !important;
+    font-weight: 700;
+}
+
+/* Đáp án thi */
+.choice {
+    background: #f1f5f9 !important; /* xám nhạt sáng */
+    border-color: #cbd5e1 !important;
+    color: #000000 !important;
+}
+.choice:hover {
+    background: #e2e8f0 !important;
+}
+
+/* Khi chọn */
+.choice.selected {
+    outline: 3px solid #0ea5e9;
+    background: #bae6fd !important; /* xanh dương nhạt */
+    border-color: #0284c7 !important;
+}
+
+/* Khi đánh giá đúng sai */
+.choice.correct {
+    background: #bbf7d0 !important; /* xanh lá nhạt */
+    border-color: #16a34a !important;
+    color: #065f46 !important;
+}
+.choice.wrong {
+    background: #fecaca !important; /* đỏ nhạt */
+    border-color: #dc2626 !important;
+    color: #7f1d1d !important;
+    text-decoration: line-through;
+}
+
+/* Kết quả bài thi cũng hiển thị rõ ràng */
+#examResult {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #cbd5e1;
+}
+
+.note-italic {
+    font-style: italic;
+    color: #b91c1c !important; /* Đỏ đậm: dễ nhìn hơn */
+    font-weight: 500 !important;
+    margin-top: 8px;
+    display: none;
+}
+
 </style></head><body>
   <div class="topbar">
     <div class="title">Trắc nghiệm đấu thầu</div>
